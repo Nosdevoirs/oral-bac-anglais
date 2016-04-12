@@ -3,7 +3,6 @@ html {
 
 body {
   background-color: #ebf2ef; }
-
 #header {
   height: 500px;
   width: 100%;
@@ -145,11 +144,15 @@ body {
 
 .fb-share-button {
   position: absolute;
+  max-width: 150px;
+  max-height: 75px;
   left: 85%;
   top: 0px; }
 
 .twitter-share-btn {
   position: absolute;
+  max-width: 150px;
+  max-height: 75px;
   left: 73%;
   top: 14px; }
 
@@ -183,4 +186,4 @@ body {
     width: 100%; }
   #footer p {
     left: 50%;
-    margin-left: -140.5px; } }
+    margin-left: -140.5px; }
