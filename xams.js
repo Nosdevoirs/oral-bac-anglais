@@ -4,7 +4,7 @@
 	var $questionList = $('#questionList');
 	var $questionListElements;
 
-	var $template = _.template('<li class="animated fadeInUpBig json-question"><%= content %><div class="json-views"><%= views %> vues</div><div class="json-answer--wrapper json-answer--hidden"><a href="<%= link %>" class="json-link" target="_blank"><h3 class="json-header">Voir l\'integralité</h3><p class="json-answer"><%= answer %></p></a></div></li>');
+	var $template = _.template('<li class="animated fadeInUpBig json-question"><%= content %><div class="json-tags"><%= tags %></div><div class="json-views"><%= views %> vues</div><div class="json-answer--wrapper json-answer--hidden"><a href="<%= link %>" class="json-link" target="_blank"><h3 class="json-header">Voir l\'integralité</h3><p class="json-answer"><%= answer %></p></a></div></li>');
 
 	function renderQuestions(questions) {
 		var $fragment = $(document.createDocumentFragment());
@@ -12,6 +12,7 @@
 		questions.forEach(function(question) {
 			$fragment.append($template({
 				content: question.content,
+				tags: question.tags,
 				link: question.link,
 				answer: question.answer,
 				views: question.views,
