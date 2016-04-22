@@ -178,6 +178,11 @@ body {
     border-radius: 0; }
     #content div ul {
       padding: 0 15px; }
+      #content div ul .json-question {
+      font-size: .9rem
+      padding-right: 40px }
+      #content div ul .json-tags {
+      font-size: 0.8rem }
     #content .mint-logo {
       top: -330px;
       left: 50%;
