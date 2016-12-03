@@ -45,8 +45,8 @@
 			var $answer = $(this).find('.json-answer--wrapper');
 			var	$question = $(this);
 
-			$questionListElements.find('.json-answer--wrapper').slideUp(700);
-			$answer.slideDown(700);
+			$questionListElements.find('.json-answer--wrapper').slideUp(300);
+			$answer.slideDown(300);
 
 			function toggleColor() {
 				if ($("li").hasClass('js-li--blue')) {
