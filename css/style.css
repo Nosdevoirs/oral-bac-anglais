@@ -13,6 +13,9 @@ body {
   #header h1 {
     text-align: center;
     padding-top: 220px; }
+  #header h2 {
+    text-align: center;
+    padding-top: 220px; }
 
 #content {
   position: relative;
